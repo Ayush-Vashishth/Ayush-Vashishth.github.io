@@ -1,6 +1,6 @@
 /* ==========================================================================
-   AYUSH VASHISHTH — PORTFOLIO INTERACTIVE LOGIC & ENGINE v3.1
-   Features: Multi-device Responsiveness, Lerp Custom Cursor, Vault Inspector,
+   AYUSH VASHISHTH — PORTFOLIO INTERACTIVE LOGIC & ENGINE v3.2
+   Features: Robust Multi-device Responsiveness, Lerp Custom Cursor, Vault Inspector,
             VAPT Scanner, Smooth Anchor Navigation, Web3Forms, CLI Shell
    ========================================================================== */
 
@@ -413,9 +413,9 @@ const vaultData = {
         tags: ["Dynamic Ephemeral Tokens", "Auto-Revocation TTL", "Zero Leakage", "Short-lived Leases"]
     },
     deploy: {
-        title: "Node 4: Secure Microservices Deployment",
+        title: "Node 4: Secure Application & Figma Dashboards",
         desc: "Jenkins injects the decrypted secret directly into build memory/environment variables at runtime. Application containers start securely with zero plaintext credentials saved to disk or git repositories.",
-        tags: ["Production Isolation", "Zero Plaintext Leaks", "DevSecOps Pipeline", "Container Security"]
+        tags: ["Production Isolation", "Zero Plaintext Leaks", "REST APIs Integration", "Figma Dashboard"]
     }
 };
 
@@ -478,7 +478,6 @@ function setupVaptScannerSimulator() {
         if (!targetInput || !termBody || !statusTag) return;
 
         const target = targetInput.value.trim() || 'api.target-enterprise.internal';
-        const scanType = scanTypeSelect ? scanTypeSelect.value : 'full';
 
         termBody.innerHTML = '';
         statusTag.className = 'vapt-status-scanning';
@@ -511,7 +510,7 @@ function setupVaptScannerSimulator() {
                     statusTag.innerText = 'AUDIT COMPLETE';
                     showToast('VAPT Vulnerability Scan Complete');
                 }
-            }, index * 450);
+            }, index * 400);
         });
     });
 }
@@ -522,12 +521,12 @@ function setupVaptScannerSimulator() {
 const sectionLocationMap = {
     'hero': 'HERO // OVERVIEW',
     'about': 'ABOUT // BACKGROUND',
-    'skills': 'TECHNICAL ARSENAL',
+    'skills': 'TECHNICAL SKILLS',
     'vault-demo': 'VAULT // SECRETS FLOW',
     'experience': 'EXPERIENCE // ANANTIXIA',
     'projects': 'FEATURED PROJECTS',
     'vapt-demo': 'ATLAS VAPT SCANNER',
-    'research': 'RESEARCH & HONORS',
+    'research': 'CERTIFICATES & ACHIEVEMENTS',
     'education': 'ACADEMIC QUALIFICATIONS',
     'terminal': 'DEVELOPER CLI',
     'contact': 'GET IN TOUCH'
@@ -595,14 +594,12 @@ function setupSkillsFilter() {
 
                 if (category === 'all' || cardCat === category) {
                     card.style.display = 'flex';
-                    setTimeout(() => {
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
-                    }, 50);
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
                 } else {
                     card.style.opacity = '0';
                     card.style.transform = 'translateY(10px)';
-                    setTimeout(() => { card.style.display = 'none'; }, 200);
+                    card.style.display = 'none';
                 }
             });
         });
@@ -655,28 +652,28 @@ function handleTerminalCommand(cmd) {
             break;
 
         case 'about':
-            printTermLine('AYUSH VASHISHTH | Security Engineer & Web Developer', 'term-green');
+            printTermLine('AYUSH VASHISHTH | Web Developer Intern — Security Engineering', 'term-green');
             printTermLine('B.Tech CSE (Cyber Security & Forensics) at UPES Dehradun | CGPA: 7.95/10');
             break;
 
         case 'skills':
-            printTermLine('SECURITY: HashiCorp Vault, Jenkins CI/CD, Secrets Mgmt, RBAC, VAPT', 'term-green');
-            printTermLine('PROGRAMMING & APIs: FastAPI, REST APIs, Java, HTML5/CSS3/JS');
-            printTermLine('TOOLS: Git, GitHub, Linux, MySQL, MongoDB');
+            printTermLine('CYBERSECURITY: HashiCorp Vault, Secure CI/CD, Secrets Mgmt, RBAC, VAPT', 'term-green');
+            printTermLine('PROGRAMMING & APIs: Java, HTML5, CSS3, FastAPI, REST APIs');
+            printTermLine('TOOLS & PLATFORMS: Git, GitHub, Jenkins, Linux, MySQL, MongoDB');
             break;
 
         case 'experience':
-            printTermLine('Anantixia Pvt. Ltd. - DevOps Engineer & Web Developer Intern', 'term-yellow');
-            printTermLine('Nauka Foundation - Web Developer Social Internship');
+            printTermLine('Anantixia Pvt. Ltd. - Web Developer Intern — Security Engineering', 'term-yellow');
+            printTermLine('Nauka Foundation - Social Internship — Web Developer');
             break;
 
         case 'projects':
             printTermLine('ATLAS: Advanced Testing Lab for Application Security (FastAPI + Nmap + OWASP)', 'term-yellow');
-            printTermLine('ATS Resume Builder: Full-stack ATS optimization & PDF exporter');
+            printTermLine('ATS Resume Builder: Full-stack ATS resume builder with REST APIs & PDF export');
             break;
 
         case 'certs':
-            printTermLine('CodeSignal: Understanding LLMs & Basic Prompting', 'term-green');
+            printTermLine('CodeSignal: Understanding LLMs & Basic Prompting Techniques', 'term-green');
             printTermLine('TEEX: Detecting and Responding to a Cyber Attack');
             break;
 
