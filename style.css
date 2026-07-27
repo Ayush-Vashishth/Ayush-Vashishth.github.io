@@ -639,8 +639,8 @@ body {
 .back-to-top:hover {
     background: var(--accent-cyan);
     color: #04040C;
-    transform: translateY(-5px) scale(1.08);
-    box-shadow: 0 10px 30px rgba(34, 211, 238, 0.5);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 12px 32px rgba(34, 211, 238, 0.6);
 }
 
 .back-to-top .svg-icon {
@@ -877,8 +877,13 @@ h1, h2, h3, h4 {
 
 .btn-primary:hover {
     background: #0284c7;
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 8px 25px rgba(14, 165, 233, 0.5);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.6);
+}
+
+.btn-primary:focus-visible {
+    outline: 2px solid var(--accent-cyan);
+    outline-offset: 3px;
 }
 
 .btn-secondary {
@@ -895,7 +900,9 @@ h1, h2, h3, h4 {
 }
 
 .btn:active {
-    transform: scale(0.96);
+    transform: scale(0.95) !important;
+    box-shadow: none !important;
+    transition: transform 0.08s ease, box-shadow 0.08s ease !important;
 }
 
 /* HERO SECTION */
@@ -1148,11 +1155,43 @@ h1, h2, h3, h4 {
     justify-content: space-between;
 }
 
+.skill-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-dim);
+    backdrop-filter: blur(16px);
+    border-radius: var(--radius-md);
+    padding: 22px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top-edge cyan light shine on hover */
+.skill-card::before, .project-card::before, .timeline-card::before, .info-card::before, .edu-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-accent);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.skill-card:hover::before, .project-card:hover::before, .timeline-card:hover::before, .info-card:hover::before, .edu-card:hover::before {
+    opacity: 1;
+}
+
 .skill-card:hover {
     background: var(--bg-card-hover);
     border-color: var(--border-hover);
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-glow);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-glow), 0 20px 40px -10px rgba(0,0,0,0.5);
 }
 
 .skill-header {
@@ -1218,8 +1257,13 @@ h1, h2, h3, h4 {
 .vault-step-node:hover, .vault-step-node.active-node {
     background: var(--bg-card-hover);
     border-color: var(--accent-cyan);
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px -4px rgba(34, 211, 238, 0.35);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px -4px rgba(34, 211, 238, 0.45);
+}
+
+.vault-step-node.active-node {
+    background: rgba(34, 211, 238, 0.08);
+    box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.5), 0 10px 28px -4px rgba(34, 211, 238, 0.45);
 }
 
 .node-icon-box {
@@ -1257,9 +1301,17 @@ h1, h2, h3, h4 {
 }
 
 .vault-connector {
-    font-size: 1.2rem;
-    color: var(--text-dim);
+    font-size: 1.4rem;
+    color: var(--accent-cyan);
     font-weight: 700;
+    opacity: 0.6;
+    flex-shrink: 0;
+    animation: connectorPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes connectorPulse {
+    0%, 100% { opacity: 0.4; transform: scaleX(1); }
+    50% { opacity: 0.9; transform: scaleX(1.15); }
 }
 
 .vault-inspector-box {
@@ -1326,8 +1378,8 @@ h1, h2, h3, h4 {
 
 .timeline-card:hover {
     border-color: var(--border-hover);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-card);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-glow), 0 20px 40px -10px rgba(0,0,0,0.5);
 }
 
 .timeline-meta {
@@ -1403,11 +1455,25 @@ h1, h2, h3, h4 {
     transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-dim);
+    backdrop-filter: blur(20px);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+
 .project-card:hover {
     background: var(--bg-card-hover);
     border-color: var(--border-hover);
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-glow);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-glow), 0 24px 48px -12px rgba(0,0,0,0.6);
 }
 
 .project-tag {
@@ -1469,10 +1535,24 @@ h1, h2, h3, h4 {
     justify-content: space-between;
 }
 
+.info-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-dim);
+    backdrop-filter: blur(16px);
+    border-radius: var(--radius-lg);
+    padding: 26px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
 .info-card:hover {
     border-color: var(--border-hover);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-card);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-glow), 0 20px 40px -10px rgba(0,0,0,0.5);
 }
 
 .info-card-title {
@@ -1499,12 +1579,14 @@ h1, h2, h3, h4 {
     border-radius: var(--radius-lg);
     padding: 26px;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .edu-card:hover {
     border-color: var(--border-hover);
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-card);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-glow), 0 20px 40px -10px rgba(0,0,0,0.5);
 }
 
 .edu-badge-group {
@@ -1705,7 +1787,13 @@ h1, h2, h3, h4 {
 .form-input:focus {
     border-color: var(--accent-cyan);
     background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0 15px rgba(34, 211, 238, 0.25);
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.15), 0 0 20px rgba(34, 211, 238, 0.2);
+    transform: translateY(-1px);
+}
+
+.form-input::placeholder {
+    color: var(--text-dim);
+    font-style: italic;
 }
 
 /* FOOTER */
@@ -1715,6 +1803,170 @@ h1, h2, h3, h4 {
     text-align: center;
     font-size: 0.88rem;
     color: var(--text-dim);
+    transition: color 0.3s ease;
+}
+
+.footer:hover {
+    color: var(--text-muted);
+}
+
+/* SCROLL REVEAL ANIMATIONS */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* CONTACT FORM improved hover */
+.contact-form {
+    background: var(--bg-card);
+    border: 1px solid var(--border-dim);
+    backdrop-filter: blur(16px);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-accent);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.contact-form:focus-within {
+    border-color: var(--border-hover);
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.1);
+}
+
+.contact-form:focus-within::before {
+    opacity: 1;
+}
+
+/* HERO Avatar Card enhanced ring */
+.avatar-img-wrap::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    background: var(--gradient-accent);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.35s ease;
+    filter: blur(8px);
+}
+
+.hero-avatar-card:hover .avatar-img-wrap::after {
+    opacity: 0.5;
+}
+
+/* VAPT simulator card improvements */
+.vapt-sim-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-dim);
+    backdrop-filter: blur(16px);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.vapt-sim-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-accent);
+    opacity: 0.7;
+}
+
+.vapt-sim-card:hover {
+    border-color: var(--border-hover);
+}
+
+/* LIGHT MODE fixes for card text */
+body.theme-light .skill-card,
+body.theme-light .project-card,
+body.theme-light .info-card,
+body.theme-light .edu-card,
+body.theme-light .timeline-card {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+body.theme-light .skill-card:hover,
+body.theme-light .project-card:hover,
+body.theme-light .info-card:hover,
+body.theme-light .edu-card:hover,
+body.theme-light .timeline-card:hover {
+    box-shadow: 0 0 0 2px rgba(14,165,233,0.3), 0 16px 32px rgba(0,0,0,0.1);
+}
+
+body.theme-light .contact-card-link {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+body.theme-light .form-input {
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--text-main);
+}
+
+body.theme-light .form-input:focus {
+    background: rgba(14, 165, 233, 0.04);
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.15);
+}
+
+body.theme-light .terminal-container {
+    background: #1a1f2e;
+}
+
+/* VAPT form row improved alignment */
+.vapt-form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.vapt-form-row .btn {
+    height: 46px;
+    align-self: flex-end;
+    flex-shrink: 0;
+    min-width: 180px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .vapt-form-row {
+        flex-direction: column;
+    }
+    .vapt-form-row .btn {
+        width: 100%;
+        min-width: unset;
+    }
+    .section-title {
+        font-size: 1.85rem;
+    }
 }
 
 /* RESPONSIVE DESIGN FOR SIDEBAR & CARDS */
