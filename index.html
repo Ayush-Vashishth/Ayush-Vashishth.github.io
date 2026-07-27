@@ -94,6 +94,15 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <!-- TOP READING PROGRESS BAR -->
+    <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+
+    <!-- STICKY SECTION TELEMETRY BREADCRUMB HEADER -->
+    <div id="sticky-telemetry-header" class="sticky-telemetry-header">
+        <span class="telemetry-badge">SEC.LOC</span>
+        <span id="telemetry-loc-text" class="telemetry-loc-text">HERO // OVERVIEW</span>
+    </div>
+
     <!-- CUSTOM TECH CURSOR ELEMENTS -->
     <div class="custom-cursor-dot" id="cursor-dot"></div>
     <div class="custom-cursor-ring" id="cursor-ring"></div>
@@ -288,7 +297,7 @@
                     <button class="filter-btn" data-category="tools" id="btn-filter-tools">Tools &amp; Databases</button>
                 </div>
 
-                <!-- Skills Grid -->
+                <!-- Skills Grid (Cleaned of skill-bar progress lines) -->
                 <div class="skills-grid" id="skills-grid">
                     <div class="skill-card" data-category="security">
                         <div class="skill-header">
@@ -297,7 +306,6 @@
                                 <span class="skill-title">HashiCorp Vault &amp; Secrets Mgmt</span>
                             </div>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
                         <p class="skill-desc">Centralized secrets engine management, dynamic ephemeral credentials, AES-256 GCM encryption, and token lifecycle policies.</p>
                     </div>
 
@@ -308,7 +316,6 @@
                                 <span class="skill-title">Jenkins CI/CD &amp; AppRole RBAC</span>
                             </div>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
                         <p class="skill-desc">Automated deployment pipelines, shared Groovy pipeline libraries, and AppRole-based environment-scoped isolation.</p>
                     </div>
 
@@ -319,7 +326,6 @@
                                 <span class="skill-title">Vulnerability Assessment (VAPT)</span>
                             </div>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
                         <p class="skill-desc">Nmap automated scanning, OWASP Top 10 attack vector auditing, and IoT security threat analysis.</p>
                     </div>
 
@@ -330,7 +336,6 @@
                                 <span class="skill-title">FastAPI &amp; REST APIs</span>
                             </div>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
                         <p class="skill-desc">High-performance asynchronous Python API architecture, JWT authentication, and JSON schema validation.</p>
                     </div>
 
@@ -341,7 +346,6 @@
                                 <span class="skill-title">Java &amp; OOP</span>
                             </div>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
                         <p class="skill-desc">Object-oriented programming, data structures, algorithm design, and core software engineering principles.</p>
                     </div>
 
@@ -352,7 +356,6 @@
                                 <span class="skill-title">React.js, HTML5 &amp; CSS3</span>
                             </div>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 94%;"></div></div>
                         <p class="skill-desc">Responsive web interfaces, Figma design component conversion, glassmorphism UI design, and modern Web APIs.</p>
                     </div>
 
@@ -363,7 +366,6 @@
                                 <span class="skill-title">Git, GitHub &amp; Linux</span>
                             </div>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
                         <p class="skill-desc">Version control, collaborative git flow, Linux system administration, and automated shell scripting.</p>
                     </div>
 
@@ -374,7 +376,6 @@
                                 <span class="skill-title">MySQL &amp; MongoDB</span>
                             </div>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
                         <p class="skill-desc">Relational database design, query optimization, indexing, and NoSQL document storage.</p>
                     </div>
                 </div>
@@ -559,7 +560,7 @@
                             <p class="project-desc">
                                 Built a high-performance <strong>FastAPI-based</strong> cybersecurity platform for automated Web and IoT vulnerability assessment. Seamlessly executes Nmap attack surface scans and OWASP Top 10 security audits.
                             </p>
-                            <ul class="project-highlights">
+                            <ul class="project-highlights bullet-list">
                                 <li>FastAPI asynchronous routines executing automated security scan workflows.</li>
                                 <li>Integrated Nmap scanning, OWASP Top 10 attack surface auditing, and REST APIs.</li>
                                 <li>Automated export of interactive HTML and JSON vulnerability audit reports.</li>
@@ -582,7 +583,7 @@
                             <p class="project-desc">
                                 A full-stack ATS resume optimization platform featuring real-time job description keyword analysis and automated PDF generation capabilities.
                             </p>
-                            <ul class="project-highlights">
+                            <ul class="project-highlights bullet-list">
                                 <li>Keyword matching algorithm scoring resume compatibility against job descriptions.</li>
                                 <li>REST APIs handling user profile persistence and instant PDF rendering.</li>
                                 <li>Clean responsive UI simplifying resume customization for applicants.</li>
@@ -687,18 +688,22 @@
                     <div class="edu-card">
                         <span class="section-tag">BACHELOR OF TECHNOLOGY</span>
                         <h3 class="info-card-title">UPES, Dehradun</h3>
-                        <p class="modern-subtitle">B.Tech Computer Science Engineering (Cyber Security &amp; Forensics)</p>
-                        <p class="date-badge mt-2">Aug 2023 – Present</p>
-                        <div class="mt-3">
-                            <span class="pill accent" style="font-size: 0.9rem;">CGPA: 7.95 / 10.0</span>
+                        <p class="modern-subtitle mb-3">B.Tech Computer Science Engineering (Cyber Security &amp; Forensics)</p>
+                        
+                        <div class="edu-badge-group">
+                            <span class="date-badge">Aug 2023 – Present</span>
+                            <span class="pill accent">CGPA: 7.95 / 10.0</span>
                         </div>
                     </div>
 
                     <div class="edu-card">
                         <span class="section-tag">SECONDARY EDUCATION</span>
                         <h3 class="info-card-title">Dewan Public School, Meerut</h3>
-                        <p class="modern-subtitle">Central Board of Secondary Education (CBSE)</p>
-                        <p class="date-badge mt-2">Class of 2022</p>
+                        <p class="modern-subtitle mb-3">Central Board of Secondary Education (CBSE)</p>
+
+                        <div class="edu-badge-group">
+                            <span class="date-badge">Class of 2022</span>
+                        </div>
                     </div>
                 </div>
             </div>
