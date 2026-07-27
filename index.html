@@ -1,351 +1,836 @@
-<html lang="en" class="js-loading">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T5KQ5XGP');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayush Vashishth | Cybersecurity & Frontend Developer</title>
-    <meta name="description"
-        content="Portfolio of Ayush Vashishth - Cybersecurity enthusiast and frontend developer specializing in scalable, performance-driven systems.">
+    
+    <!-- Lock DarkReader & Extension Overrides -->
+    <meta name="color-scheme" content="dark light">
+    <meta name="darkreader-lock">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="avatar.png">
+    <link rel="apple-touch-icon" href="avatar.png">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Ayush Vashishth | Security Engineer &amp; DevSecOps Developer</title>
+    <meta name="title" content="Ayush Vashishth | Security Engineer &amp; DevSecOps Developer">
+    <meta name="description" content="Official Portfolio of Ayush Vashishth — DevOps & Security Engineer Intern at Anantixia, specializing in HashiCorp Vault, Jenkins CI/CD secrets management, Groovy pipeline libraries, AppRole RBAC, FastAPI, and VAPT.">
+    <meta name="keywords" content="Ayush Vashishth, DevOps Engineer, Security Engineer, DevSecOps, Anantixia, HashiCorp Vault, Jenkins CI/CD, Secrets Management, AppRole RBAC, Groovy Library, VAPT, FastAPI, Python, React.js, UPES Dehradun">
+    <meta name="author" content="Ayush Vashishth">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ayush-vashishth.github.io/">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ayush-vashishth.github.io/">
+    <meta property="og:title" content="Ayush Vashishth | Security Engineer &amp; DevSecOps Developer">
+    <meta property="og:description" content="DevOps & Security Engineer Intern at Anantixia specializing in HashiCorp Vault, Jenkins CI/CD secrets management, AppRole RBAC, FastAPI, and VAPT. View interactive projects and tools.">
+    <meta property="og:image" content="https://ayush-vashishth.github.io/avatar.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ayush-vashishth.github.io/">
+    <meta name="twitter:title" content="Ayush Vashishth | Security Engineer &amp; DevSecOps Developer">
+    <meta name="twitter:description" content="DevOps & Security Engineer Intern at Anantixia specializing in HashiCorp Vault, Jenkins CI/CD, FastAPI, VAPT, and Post-Quantum Cryptography.">
+    <meta name="twitter:image" content="https://ayush-vashishth.github.io/avatar.png">
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ayush Vashishth",
+      "url": "https://ayush-vashishth.github.io/",
+      "image": "https://ayush-vashishth.github.io/avatar.png",
+      "jobTitle": "DevOps Engineer & Security Intern",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Anantixia Pvt. Ltd."
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "UPES Dehradun"
+      },
+      "knowsAbout": [
+        "DevOps Engineering",
+        "Cybersecurity",
+        "HashiCorp Vault",
+        "Jenkins CI/CD",
+        "Secrets Management",
+        "AppRole RBAC",
+        "Groovy Pipeline Libraries",
+        "Vulnerability Assessment (VAPT)",
+        "FastAPI",
+        "React.js"
+      ],
+      "sameAs": [
+        "https://linkedin.com/in/ayushvs1201",
+        "https://github.com/Ayush-Vashishth"
+      ]
+    }
+    </script>
+    
+    <!-- Google Modern Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="preload" as="image" href="avatar.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="image" href="avatar.png">
 </head>
+<body class="theme-dark layout-left-sidebar">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5KQ5XGP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-<body>
-    <!-- Preloader -->
-    <div id="loader" class="loader">
-        <div class="loader-content">
-            <span class="loader-text text-gradient">Initializing SYSTEM</span>
-            <div class="loader-bar">
-                <div class="loader-progress"></div>
-            </div>
-        </div>
-    </div>
+    <!-- CUSTOM TECH CURSOR ELEMENTS -->
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+    <div class="custom-cursor-ring" id="cursor-ring"></div>
 
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
-
-    <!-- Noise Texture Overlay -->
-    <div class="noise-overlay" aria-hidden="true"></div>
-
-    <!-- Particle Canvas Background -->
+    <!-- DYNAMIC BACKGROUND LAYERS -->
+    <div class="noise-overlay"></div>
+    <div class="blob-bg" id="blob-bg-1"></div>
+    <div class="blob-bg-2" id="blob-bg-2"></div>
     <canvas id="particles"></canvas>
 
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scrollProgress"></div>
-
-    <!-- Dynamic Background Orbs -->
-    <div class="blob-bg"></div>
-    <div class="blob-bg-2"></div>
-
-    <!-- Sticky Navigation -->
-    <nav class="navbar" id="navbar">
-        <a href="#" class="nav-logo gradient-text">AV</a>
-        <div class="nav-links" id="navLinks">
-            <a href="#about" class="nav-link" data-section="about">About</a>
-            <a href="#skills" class="nav-link" data-section="skills">Skills</a>
-            <a href="#experience" class="nav-link" data-section="experience">Experience</a>
-            <a href="#projects" class="nav-link" data-section="projects">Projects</a>
-            <a href="#research" class="nav-link" data-section="research">Research</a>
-            <a href="#education" class="nav-link" data-section="education">Education</a>
-        </div>
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </nav>
-
-    <!-- Mobile Nav Overlay -->
-    <div class="mobile-nav-overlay" id="mobileNavOverlay">
-        <div class="mobile-nav-content">
-            <a href="#about" class="mobile-nav-link" data-section="about">About</a>
-            <a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a>
-            <a href="#experience" class="mobile-nav-link" data-section="experience">Experience</a>
-            <a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a>
-            <a href="#research" class="mobile-nav-link" data-section="research">Research</a>
-            <a href="#education" class="mobile-nav-link" data-section="education">Education</a>
+    <!-- PRELOADER SCREEN -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="spinner-ring"></div>
+            <div class="preloader-logo">AV</div>
+            <div class="preloader-text">INITIALIZING VASHISHTH.SEC // SYSTEM READY</div>
         </div>
     </div>
 
-    <main class="bento-container">
-        <!-- Hero/Profile Card -->
-        <article class="bento-item hero bento-card" id="hero">
-            <div class="hero-content">
-                <div class="profile-header">
-                    <img src="avatar.png" alt="Ayush Vashishth" class="profile-img">
-                    <div class="status-badge">
-                        <span class="pulse"></span> Available for work
-                    </div>
-                </div>
-                <h1>Ayush <br><span class="gradient-text">Vashishth</span></h1>
-                <div class="typed-wrapper">
-                    <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
-                </div>
-                <div class="social-links">
-                    <a href="mailto:ayushvs1201@gmail.com" class="social-btn" aria-label="Email">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                        </svg>
-                    </a>
-                    <a href="https://linkedin.com/in/ayushvs1201" target="_blank" rel="noopener noreferrer"
-                        class="social-btn" aria-label="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                            </path>
-                            <rect width="4" height="12" x="2" y="9"></rect>
-                            <circle cx="4" cy="4" r="2"></circle>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/Ayush-Vashishth" target="_blank" rel="noopener noreferrer"
-                        class="social-btn" aria-label="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
-                            </path>
-                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                        </svg>
-                    </a>
-                    <a href="tel:+919045495707" class="social-btn phone-tooltip-btn" aria-label="Phone">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                            </path>
-                        </svg>
-                        <span class="phone-tooltip">+91 9045495707</span>
-                    </a>
-                    <a href="resume.pdf" download class="social-btn resume-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                        Download CV
-                    </a>
-                </div>
-            </div>
-            <div class="hover-glow"></div>
-        </article>
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast-container" class="toast-container"></div>
 
-        <!-- Summary Card -->
-        <article class="bento-item summary bento-card" id="about">
-            <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M12 16v-4" />
-                    <path d="M12 8h.01" />
-                </svg> About</h3>
-            <p class="text-secondary">
-                Cybersecurity and software development enthusiast with hands-on experience in secure application
-                development and vulnerability assessment. Passionate about building scalable, performance-driven systems
-                with strong foundations in frontend engineering and applied security research.
-            </p>
-            <div class="hover-glow"></div>
-        </article>
-
-        <!-- Tech Stack Card -->
-        <article class="bento-item skills bento-card" id="skills">
-            <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m18 16 4-4-4-4" />
-                    <path d="m6 8-4 4 4 4" />
-                    <path d="m14.5 4-5 16" />
-                </svg> Technical Arsenal</h3>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <span class="category-label">Frontend</span>
-                    <div class="pill-container">
-                        <span class="pill">React</span>
-                        <span class="pill">JavaScript</span>
-                        <span class="pill">HTML/CSS</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <span class="category-label">Backend</span>
-                    <div class="pill-container">
-                        <span class="pill">Node.js</span>
-                        <span class="pill">Python</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <span class="category-label">Security</span>
-                    <div class="pill-container">
-                        <span class="pill">Burp Suite</span>
-                        <span class="pill">Nmap</span>
-                        <span class="pill">Wireshark</span>
-                        <span class="pill">Nessus</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <span class="category-label">Databases</span>
-                    <div class="pill-container">
-                        <span class="pill">MongoDB</span>
-                        <span class="pill">MySQL</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hover-glow"></div>
-        </article>
-
-        <!-- Experience Card -->
-        <article class="bento-item experience bento-card" id="experience">
-            <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
-                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-                </svg> Experience</h3>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4>Frontend Developer</h4>
-                        <p class="company">Anantixia <span>• Mar 2026 - Present</span></p>
-                        <ul>
-                            <li>Developed responsive, production-ready web applications using React.</li>
-                            <li>Translated complex Figma design systems into reusable components.</li>
-                            <li>Integrated RESTful APIs to enhance user interaction.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h4>Intern</h4>
-                        <p class="company">P&M Solutions <span>• Jun 2025 - Jul 2025</span></p>
-                        <ul>
-                            <li>Drafted EIA, EMP, and PFR reports analyzing environmental data.</li>
-                            <li>Assisted in preparing mitigation strategies through risk assessment.</li>
-                            <li>Streamlined data collection workflows to improve report generation efficiency.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="hover-glow"></div>
-        </article>
-
-        <!-- Projects Card -->
-        <article class="bento-item projects bento-card" id="projects">
-            <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
-                    <polyline points="2 17 12 22 22 17" />
-                    <polyline points="2 12 12 17 22 12" />
-                </svg> Featured Project</h3>
-            <div class="project-card mt-2">
-                <h4>ATLAS <span>Advanced Testing Lab for Application Security</span></h4>
-                <p class="text-secondary mt-2">Co-developed a VAPT platform integrating Web and IoT penetration testing
-                    tools to simulate real-world attacks. Focuses on actionable intelligence.</p>
-                <div class="pill-container mt-3">
-                    <span class="pill outline text-xs">VAPT</span>
-                    <span class="pill outline text-xs">IoT Security</span>
-                    <span class="pill outline text-xs">OWASP</span>
-                </div>
-            </div>
-            <div class="hover-glow"></div>
-        </article>
-
-        <!-- Research Card -->
-        <article class="bento-item research bento-card" id="research">
-            <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-                </svg> Research</h3>
-            <div class="research-content mt-2">
-                <h4 class="text-gradient">Post-Quantum Cryptography in Hybrid Enterprise Networks</h4>
-                <ul class="text-secondary">
-                    <li>Analyzed architectural challenges and migration strategies.</li>
-                    <li>Proposed a risk-based adoption framework for cryptographic resilience.</li>
-                </ul>
-            </div>
-            <div class="hover-glow"></div>
-        </article>
-
-        <!-- Education Card -->
-        <article class="bento-item education bento-card" id="education">
-            <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path
-                        d="M2 14.5A2.5 2.5 0 0 0 4.5 17h15a2.5 2.5 0 0 0 2.5-2.5v-9A2.5 2.5 0 0 0 19.5 3h-15A2.5 2.5 0 0 0 2 5.5v9z" />
-                    <path d="M2 17v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2" />
-                </svg> Education</h3>
-            <div class="edu-item mt-3">
-                <h4>UPES, Dehradun</h4>
-                <p class="text-sm text-secondary">B.Tech in CSE - Cyber Security and Forensics</p>
-                <p class="text-xs time">Aug 2023 - Present</p>
-            </div>
-            <div class="edu-item mt-3">
-                <h4>Dewan Public School, Meerut</h4>
-                <p class="text-sm text-secondary">CBSE</p>
-                <p class="text-xs time">Class of 2022</p>
-            </div>
-            <div class="hover-glow"></div>
-        </article>
-    </main>
-
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-left">
-                <span class="footer-name gradient-text">Ayush Vashishth</span>
-                <p class="text-secondary text-sm">Building secure & beautiful digital experiences.</p>
-                <p class="footer-location text-secondary text-xs">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    Dehradun, India
-                </p>
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-copy text-secondary text-sm">&copy; 2026 Ayush Vashishth. All rights reserved.</p>
-                <p class="footer-credit text-secondary text-xs">Designed &amp; Built by Ayush</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="18 15 12 9 6 15"></polyline>
-        </svg>
+    <!-- BACK TO TOP ARROW BUTTON -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Jump to top">
+        <svg class="svg-icon" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
     </button>
 
-    <noscript>
-        <style>
-            .loader {
-                display: none !important;
-            }
+    <!-- RESUME PDF PREVIEW MODAL -->
+    <div id="resume-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <svg class="svg-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    <span>Resume CV — Ayush Vashishth</span>
+                </div>
+                <div class="modal-controls">
+                    <a href="resume.pdf" download class="btn btn-primary text-xs">Download PDF</a>
+                    <button id="close-modal-btn" class="modal-close-btn" aria-label="Close modal">✕</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <iframe src="resume.pdf" class="resume-iframe" title="Ayush Vashishth Resume Preview"></iframe>
+            </div>
+        </div>
+    </div>
 
-            .bento-card {
-                opacity: 1 !important;
-                transform: none !important;
-            }
+    <!-- AUTO-EXPANDING LEFT SIDEBAR HEADER NAVIGATION -->
+    <header class="left-sidebar-header collapsed" id="sidebar-header">
+        <div class="sidebar-top">
+            <a href="#hero" class="nav-logo" id="sidebar-logo">
+                <span class="logo-badge">AV</span>
+                <div class="logo-text-group">
+                    <span class="logo-name">Ayush Vashishth</span>
+                    <span class="logo-sub">DevOps &amp; Security Engineer</span>
+                </div>
+            </a>
+        </div>
 
-            .cursor,
-            .cursor-follower {
-                display: none !important;
-            }
+        <!-- Sidebar Navigation Menu Links -->
+        <nav class="sidebar-nav">
+            <ul class="nav-links" id="nav-links-list">
+                <li><a href="#about" class="nav-link" id="nav-about"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>About</span></a></li>
+                <li><a href="#skills" class="nav-link" id="nav-skills"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg><span>Skills</span></a></li>
+                <li><a href="#experience" class="nav-link" id="nav-experience"><svg class="svg-icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span>Experience</span></a></li>
+                <li><a href="#vault-demo" class="nav-link" id="nav-vault-demo"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Vault Secrets</span></a></li>
+                <li><a href="#projects" class="nav-link" id="nav-projects"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.05 11a22.35 22.35 0 0 1-3.95 2z"/></svg><span>Projects</span></a></li>
+                <li><a href="#vapt-demo" class="nav-link" id="nav-vapt-demo"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><span>VAPT Scan</span></a></li>
+                <li><a href="#research" class="nav-link" id="nav-research"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg><span>Research</span></a></li>
+                <li><a href="#education" class="nav-link" id="nav-education"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg><span>Education</span></a></li>
+                <li><a href="#contact" class="nav-link" id="nav-contact"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>Contact</span></a></li>
+            </ul>
+        </nav>
 
-            #particles {
-                display: none !important;
-            }
-        </style>
-    </noscript>
+        <!-- Sidebar Actions & Controls -->
+        <div class="sidebar-footer">
+            <div class="sidebar-actions-row">
+                <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle Dark/Light Mode">
+                    <svg class="svg-icon theme-icon-svg" id="theme-icon-svg" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button id="open-resume-btn" class="btn btn-secondary text-xs flex-1">
+                    <svg class="svg-icon" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    <span>Preview CV</span>
+                </button>
+            </div>
+            <a href="resume.pdf" download class="btn btn-primary text-xs width-full mt-2">
+                <svg class="svg-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download Resume</span>
+            </a>
+        </div>
+    </header>
 
-    <script src="script.js" defer></script>
+    <!-- MAIN PORTFOLIO WRAPPER -->
+    <div class="main-content-wrapper">
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-status-pill">
+                        <span class="status-dot"></span>
+                        <span>Available for Security Engineering &amp; DevSecOps Roles</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Securing <span class="gradient-text">CI/CD Pipelines</span> &amp; Modern Infrastructure
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        I secure CI/CD pipelines for a living — and I'm a final-year <strong>B.Tech CSE (Cyber Security &amp; Forensics)</strong> student at UPES Dehradun. Specializing in <strong>HashiCorp Vault</strong>, <strong>Jenkins CI/CD secrets management</strong>, <strong>AppRole RBAC policies</strong>, <strong>Groovy pipeline libraries</strong>, and <strong>React.js / FastAPI development</strong>.
+                    </p>
+
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary" id="cta-projects">
+                            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.05 11a22.35 22.35 0 0 1-3.95 2z"/></svg>
+                            <span>Explore Projects</span>
+                        </a>
+                        <a href="#vapt-demo" class="btn btn-secondary" id="cta-vapt-demo">
+                            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            <span>Live VAPT Simulator</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="cta-contact">
+                            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+
+                    <!-- Live Security Telemetry Bar -->
+                    <div class="telemetry-bar">
+                        <div class="telemetry-item">
+                            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <span>Vault Secrets: Encrypted</span>
+                        </div>
+                        <div class="telemetry-item">
+                            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>AppRole RBAC: Enforced</span>
+                        </div>
+                        <div class="telemetry-item">
+                            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                            <span>VAPT Platform: ATLAS Online</span>
+                        </div>
+                        <div class="telemetry-item">
+                            <svg class="svg-icon" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                            <span>CGPA: 7.95 / 10.0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Avatar Card -->
+                <div class="hero-avatar-card">
+                    <div class="avatar-img-wrap">
+                        <img src="avatar.png" alt="Ayush Vashishth Profile Picture" class="avatar-img">
+                    </div>
+                    <h3 class="avatar-name">Ayush Vashishth</h3>
+                    <p class="avatar-role">DevOps &amp; Security Engineer Intern</p>
+                    <div class="avatar-pills">
+                        <span class="pill accent">HashiCorp Vault</span>
+                        <span class="pill">Jenkins CI/CD</span>
+                        <span class="pill accent">AppRole RBAC</span>
+                        <span class="pill">Groovy Library</span>
+                        <span class="pill accent">React.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="skills-section">
+            <div class="container">
+                <span class="section-tag">About &amp; Overview</span>
+                <h2 class="section-title">Bridging DevOps Engineering &amp; Development</h2>
+                <p class="section-desc">
+                    Final-year B.Tech Computer Science Engineering student at UPES Dehradun, specializing in Cyber Security and Forensics. Over the past several months, I've moved from theoretical security concepts to enterprise production implementation at <strong>Anantixia</strong>: configuring <strong>HashiCorp Vault</strong> for centralized secrets management, engineering custom <strong>Groovy pipeline libraries</strong> for Jenkins, and enforcing <strong>AppRole-based RBAC policies</strong> that prevent credential leaks while building high-performance customer dashboards.
+                </p>
+            </div>
+        </section>
+
+        <!-- SKILLS MATRIX SECTION -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <span class="section-tag">Technical Arsenal</span>
+                <h2 class="section-title">Interactive Skills Matrix</h2>
+                <p class="section-desc">
+                    Filter by technical domain to view specialized competencies, production tools, and core engineering focus.
+                </p>
+
+                <!-- Filter Bar -->
+                <div class="skills-filter-bar" id="skills-filter-container">
+                    <button class="filter-btn active" data-category="all" id="btn-filter-all">All Skills</button>
+                    <button class="filter-btn" data-category="security" id="btn-filter-security">DevOps &amp; Security</button>
+                    <button class="filter-btn" data-category="backend" id="btn-filter-backend">Backend &amp; APIs</button>
+                    <button class="filter-btn" data-category="frontend" id="btn-filter-frontend">Frontend &amp; Web</button>
+                    <button class="filter-btn" data-category="tools" id="btn-filter-tools">Tools &amp; Databases</button>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid" id="skills-grid">
+                    <div class="skill-card" data-category="security">
+                        <div class="skill-header">
+                            <div class="skill-title-wrap">
+                                <svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <span class="skill-title">HashiCorp Vault &amp; Secrets Mgmt</span>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+                        <p class="skill-desc">Centralized secrets engine management, dynamic ephemeral credentials, AES-256 GCM encryption, and token lifecycle policies.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="security">
+                        <div class="skill-header">
+                            <div class="skill-title-wrap">
+                                <svg class="svg-icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span class="skill-title">Jenkins CI/CD &amp; AppRole RBAC</span>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+                        <p class="skill-desc">Automated deployment pipelines, shared Groovy pipeline libraries, and AppRole-based environment-scoped isolation.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="security">
+                        <div class="skill-header">
+                            <div class="skill-title-wrap">
+                                <svg class="svg-icon" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                                <span class="skill-title">Vulnerability Assessment (VAPT)</span>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+                        <p class="skill-desc">Nmap automated scanning, OWASP Top 10 attack vector auditing, and IoT security threat analysis.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-header">
+                            <div class="skill-title-wrap">
+                                <svg class="svg-icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                                <span class="skill-title">FastAPI &amp; REST APIs</span>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+                        <p class="skill-desc">High-performance asynchronous Python API architecture, JWT authentication, and JSON schema validation.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="backend">
+                        <div class="skill-header">
+                            <div class="skill-title-wrap">
+                                <svg class="svg-icon" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                <span class="skill-title">Java &amp; OOP</span>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                        <p class="skill-desc">Object-oriented programming, data structures, algorithm design, and core software engineering principles.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="frontend">
+                        <div class="skill-header">
+                            <div class="skill-title-wrap">
+                                <svg class="svg-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                                <span class="skill-title">React.js, HTML5 &amp; CSS3</span>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 94%;"></div></div>
+                        <p class="skill-desc">Responsive web interfaces, Figma design component conversion, glassmorphism UI design, and modern Web APIs.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-header">
+                            <div class="skill-title-wrap">
+                                <svg class="svg-icon" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                <span class="skill-title">Git, GitHub &amp; Linux</span>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                        <p class="skill-desc">Version control, collaborative git flow, Linux system administration, and automated shell scripting.</p>
+                    </div>
+
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-header">
+                            <div class="skill-title-wrap">
+                                <svg class="svg-icon" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                                <span class="skill-title">MySQL &amp; MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+                        <p class="skill-desc">Relational database design, query optimization, indexing, and NoSQL document storage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HASHICORP VAULT ARCHITECTURE FLOW -->
+        <section id="vault-demo" class="skills-section">
+            <div class="container">
+                <span class="section-tag">Interactive Security Architecture</span>
+                <h2 class="section-title">HashiCorp Vault &amp; Jenkins Pipeline Secrets Flow</h2>
+                <p class="section-desc">
+                    Click any node in the pipeline below to inspect how dynamic ephemeral tokens and role-based access control (RBAC) secure production CI/CD deployments.
+                </p>
+
+                <div class="vault-flow-container" id="vault-flow-container">
+                    <div class="vault-step-node active-node" id="node-jenkins" onclick="selectVaultNode('jenkins')">
+                        <div class="node-icon-box">
+                            <svg class="svg-icon node-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        </div>
+                        <div class="node-title">1. Jenkins Pipeline</div>
+                        <div class="node-sub">AppRole Auth Trigger</div>
+                    </div>
+                    <div class="vault-connector">➔</div>
+                    <div class="vault-step-node" id="node-vault" onclick="selectVaultNode('vault')">
+                        <div class="node-icon-box">
+                            <svg class="svg-icon node-svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div class="node-title">2. HashiCorp Vault</div>
+                        <div class="node-sub">Policy Verification &amp; AES-256</div>
+                    </div>
+                    <div class="vault-connector">➔</div>
+                    <div class="vault-step-node" id="node-token" onclick="selectVaultNode('token')">
+                        <div class="node-icon-box">
+                            <svg class="svg-icon node-svg" viewBox="0 0 24 24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+                        </div>
+                        <div class="node-title">3. Dynamic Token</div>
+                        <div class="node-sub">Short-lived Lease Issued</div>
+                    </div>
+                    <div class="vault-connector">➔</div>
+                    <div class="vault-step-node" id="node-deploy" onclick="selectVaultNode('deploy')">
+                        <div class="node-icon-box">
+                            <svg class="svg-icon node-svg" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-3.05 11a22.35 22.35 0 0 1-3.95 2z"/></svg>
+                        </div>
+                        <div class="node-title">4. Secure Deployment</div>
+                        <div class="node-sub">Zero Plaintext Leakage</div>
+                    </div>
+                </div>
+
+                <div class="vault-inspector-box" id="vault-inspector-box">
+                    <h3 class="info-card-title" id="vault-node-title">Node 1: Jenkins Pipeline Initiation</h3>
+                    <p class="modern-text mt-2" id="vault-node-desc">
+                        Jenkins triggers build execution. Instead of hardcoding static passwords or API keys in repository files, Jenkins authenticates using a secure AppRole ID &amp; Secret ID pair against HashiCorp Vault.
+                    </p>
+                    <div class="pill-cloud mt-3" id="vault-node-tags">
+                        <span class="pill accent">AppRole Authentication</span>
+                        <span class="pill">Zero Hardcoded Secrets</span>
+                        <span class="pill">CI/CD Security</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION WITH CLEANLY ALIGNED ANANTIXIA SUB-ROLES -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Work Experience &amp; Internships</h2>
+                <p class="section-desc">
+                    Hands-on experience in DevOps infrastructure, secrets security, and production web application development.
+                </p>
+
+                <div class="timeline">
+                    <!-- ANANTIXIA PARENT TIMELINE CARD WITH CLEAN ALIGNED SUB-ROLES -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-meta mb-4">
+                                <div>
+                                    <h3 class="job-title" style="font-size: 1.35rem; color: var(--text-main);">Anantixia Pvt. Ltd.</h3>
+                                    <span class="company-name" style="font-size: 0.95rem;">Internship • 5 mos</span>
+                                </div>
+                                <span class="date-badge">Mar 2026 – Present</span>
+                            </div>
+
+                            <!-- Sub-Role 1: DevOps Engineer -->
+                            <div class="nested-role-block" style="border-left: 2px solid var(--accent-cyan); padding-left: 16px; margin-left: 4px; margin-bottom: 28px;">
+                                <div class="nested-role-header">
+                                    <h4 style="font-size: 1.1rem; color: var(--accent-cyan); font-weight: 700;">DevOps Engineer</h4>
+                                    <span class="date-badge" style="font-size: 0.78rem;">Jun 2026 – Present • 2 mos</span>
+                                </div>
+                                <p class="modern-text mb-2 mt-1" style="font-size: 0.9rem; color: var(--text-muted);">
+                                    Working on securing and modernizing the Ixia Platform's CI/CD infrastructure while building customer-facing dashboards.
+                                </p>
+                                <ul class="bullet-list" style="font-size: 0.9rem;">
+                                    <li>Implemented <strong>HashiCorp Vault</strong> with <strong>Jenkins</strong> for centralized secrets management across CI/CD pipelines, replacing hardcoded credentials with dynamic, policy-controlled access.</li>
+                                    <li>Configured <strong>RBAC policies (AppRole-based)</strong> for secure, environment-scoped credential access (dev/prod isolation).</li>
+                                    <li>Built a shared <strong>Groovy library</strong> integrating Vault secret retrieval directly into Jenkins pipeline execution stages.</li>
+                                </ul>
+                                <div class="timeline-pills-row mt-3">
+                                    <span class="pill accent">Jenkins</span>
+                                    <span class="pill accent">HashiCorp Vault</span>
+                                    <span class="pill">CI/CD</span>
+                                    <span class="pill">RBAC</span>
+                                    <span class="pill">Groovy</span>
+                                </div>
+                            </div>
+
+                            <!-- Sub-Role 2: Frontend Developer -->
+                            <div class="nested-role-block" style="border-left: 2px solid var(--accent-blue); padding-left: 16px; margin-left: 4px; margin-bottom: 8px;">
+                                <div class="nested-role-header">
+                                    <h4 style="font-size: 1.1rem; color: #38bdf8; font-weight: 700;">Frontend Developer</h4>
+                                    <span class="date-badge" style="font-size: 0.78rem;">Mar 2026 – Jun 2026 • 4 mos</span>
+                                </div>
+                                <p class="modern-text mb-2 mt-1" style="font-size: 0.88rem; color: var(--text-dim); font-weight: 600;">India • Remote (Web Developer Intern)</p>
+                                <ul class="bullet-list" style="font-size: 0.9rem;">
+                                    <li>Developed responsive, production-ready web application dashboards by integrating REST APIs and converting Figma designs to reusable React.js components.</li>
+                                </ul>
+                                <div class="timeline-pills-row mt-3">
+                                    <span class="pill accent">React.js</span>
+                                    <span class="pill">REST APIs</span>
+                                    <span class="pill">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- P & M SOLUTION TIMELINE CARD -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-meta">
+                                <div>
+                                    <h3 class="job-title">Intern — Risk Assessment &amp; Data Analysis</h3>
+                                    <span class="company-name">P &amp; M Solution</span>
+                                </div>
+                                <span class="date-badge">Jun 2025 – Jul 2025</span>
+                            </div>
+                            <ul class="bullet-list">
+                                <li>Drafted EIA, EMP, and PFR compliance reports analyzing environmental risk data.</li>
+                                <li>Assisted in preparing risk mitigation strategies and streamlined data collection workflows to improve report generation efficiency.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- NAUKA FOUNDATION TIMELINE CARD -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-meta">
+                                <div>
+                                    <h3 class="job-title">Social Internship — Web Developer</h3>
+                                    <span class="company-name">Nauka Foundation</span>
+                                </div>
+                                <span class="date-badge">Jun 2024 – Jul 2024</span>
+                            </div>
+                            <ul class="bullet-list">
+                                <li>Developed and maintained the organization’s primary WordPress portal and informational landing pages.</li>
+                                <li>Designed and deployed a secure, responsive donation page to facilitate online fundraising campaigns.</li>
+                                <li>Enhanced website user experience and page load speed through content structural optimization.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECTS SECTION -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <span class="section-tag">Featured Work</span>
+                <h2 class="section-title">Engineering Projects</h2>
+                <p class="section-desc">
+                    Flagship applications demonstrating vulnerability assessment automation, full-stack API integration, and resume optimization algorithms.
+                </p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div>
+                            <span class="project-tag">FLAGSHIP CYBERSECURITY PLATFORM</span>
+                            <h3 class="project-title">ATLAS – Advanced Testing Lab for Application Security</h3>
+                            <p class="project-desc">
+                                Built a high-performance <strong>FastAPI-based</strong> cybersecurity platform for automated Web and IoT vulnerability assessment. Seamlessly executes Nmap attack surface scans and OWASP Top 10 security audits.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>FastAPI asynchronous routines executing automated security scan workflows.</li>
+                                <li>Integrated Nmap scanning, OWASP Top 10 attack surface auditing, and REST APIs.</li>
+                                <li>Automated export of interactive HTML and JSON vulnerability audit reports.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="pill accent">FastAPI</span>
+                            <span class="pill">VAPT</span>
+                            <span class="pill">IoT Security</span>
+                            <span class="pill">Nmap</span>
+                            <span class="pill">OWASP Top 10</span>
+                            <span class="pill">REST APIs</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div>
+                            <span class="project-tag">FULL-STACK WEB APPLICATION</span>
+                            <h3 class="project-title">ATS Resume Builder</h3>
+                            <p class="project-desc">
+                                A full-stack ATS resume optimization platform featuring real-time job description keyword analysis and automated PDF generation capabilities.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Keyword matching algorithm scoring resume compatibility against job descriptions.</li>
+                                <li>REST APIs handling user profile persistence and instant PDF rendering.</li>
+                                <li>Clean responsive UI simplifying resume customization for applicants.</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech-stack">
+                            <span class="pill accent">Full-Stack</span>
+                            <span class="pill">REST APIs</span>
+                            <span class="pill">PDF Export</span>
+                            <span class="pill">Keyword Matching</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE VAPT VULNERABILITY SCANNER SIMULATOR -->
+        <section id="vapt-demo" class="skills-section">
+            <div class="container">
+                <span class="section-tag">Live Demonstration</span>
+                <h2 class="section-title">ATLAS VAPT Vulnerability Scanner Simulator</h2>
+                <p class="section-desc">
+                    Test the automated security scan engine. Select a audit profile, enter a mock target IP/Domain, and execute an interactive vulnerability audit simulation.
+                </p>
+
+                <div class="vapt-sim-card">
+                    <div class="vapt-form-row">
+                        <div class="form-group flex-1">
+                            <label for="vapt-target">Target Domain / IP Address</label>
+                            <input type="text" id="vapt-target" class="form-input" value="api.target-enterprise.internal" placeholder="e.g. 192.168.1.1 or api.target.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="vapt-scan-type">Scan Profile</label>
+                            <select id="vapt-scan-type" class="form-input">
+                                <option value="full">Full VAPT &amp; OWASP Audit</option>
+                                <option value="nmap">Nmap Port &amp; Service Discovery</option>
+                                <option value="owasp">OWASP Top 10 Vulnerability Audit</option>
+                            </select>
+                        </div>
+                        <button id="run-vapt-btn" class="btn btn-primary" style="align-self: flex-end; height: 42px;">
+                            <span>Execute VAPT Scan</span>
+                        </button>
+                    </div>
+
+                    <!-- Live Scan Output Terminal -->
+                    <div class="vapt-terminal-window">
+                        <div class="vapt-term-header">
+                            <span>ATLAS Scan Engine v2.4 // Active Audit Routine</span>
+                            <span id="vapt-status-tag" class="vapt-status-idle">IDLE</span>
+                        </div>
+                        <div id="vapt-term-body" class="vapt-term-body">
+                            <p class="term-dim">[SYSTEM] ATLAS VAPT Engine Ready. Select profile and click 'Execute VAPT Scan'...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESEARCH & CERTIFICATIONS SECTION -->
+        <section id="research" class="research-section">
+            <div class="container">
+                <span class="section-tag">Academia &amp; Certifications</span>
+                <h2 class="section-title">Research &amp; Verified Honors</h2>
+                <p class="section-desc">
+                    Published academic research, verified industry certifications, and leadership roles in student tech chapters.
+                </p>
+
+                <div class="grid-2">
+                    <div class="info-card">
+                        <span class="section-tag">PUBLISHED RESEARCH PAPER</span>
+                        <h3 class="info-card-title">Post-Quantum Cryptography in Hybrid Enterprise Networks</h3>
+                        <p class="modern-text mt-2">
+                            Authored and published a research paper proposing a risk-based adoption framework for cryptographic agility, preparing enterprise infrastructure to defend against quantum threat vectors in hybrid enterprise settings.
+                        </p>
+                        <div class="avatar-pills mt-3">
+                            <span class="pill accent">Post-Quantum Cryptography</span>
+                            <span class="pill">Cryptographic Agility</span>
+                            <span class="pill">NIST PQC</span>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="section-tag">CERTIFICATIONS &amp; LEADERSHIP</span>
+                        <h3 class="info-card-title">Verified Achievements</h3>
+                        <ul class="bullet-list mt-2">
+                            <li><strong>TEEX Cybersecurity Certification:</strong> <em>Detecting and Responding to a Cyber Attack</em> (Texas A&amp;M Engineering Extension Service).</li>
+                            <li><strong>CodeSignal Certification:</strong> <em>Understanding LLMs and Basic Prompting Techniques</em>.</li>
+                            <li><strong>HyperVision Student Chapter:</strong> Event Organizer leading technical hackathon planning, logistics, and technical judging criteria.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="education-section">
+            <div class="container">
+                <span class="section-tag">Academic Qualifications</span>
+                <h2 class="section-title">Education background</h2>
+                
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <span class="section-tag">BACHELOR OF TECHNOLOGY</span>
+                        <h3 class="info-card-title">UPES, Dehradun</h3>
+                        <p class="modern-subtitle">B.Tech Computer Science Engineering (Cyber Security &amp; Forensics)</p>
+                        <p class="date-badge mt-2">Aug 2023 – Present</p>
+                        <div class="mt-3">
+                            <span class="pill accent" style="font-size: 0.9rem;">CGPA: 7.95 / 10.0</span>
+                        </div>
+                    </div>
+
+                    <div class="edu-card">
+                        <span class="section-tag">SECONDARY EDUCATION</span>
+                        <h3 class="info-card-title">Dewan Public School, Meerut</h3>
+                        <p class="modern-subtitle">Central Board of Secondary Education (CBSE)</p>
+                        <p class="date-badge mt-2">Class of 2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TERMINAL CLI WIDGET SECTION -->
+        <section id="terminal" class="terminal-section">
+            <div class="container">
+                <span class="section-tag">Interactive CLI</span>
+                <h2 class="section-title">Developer Terminal</h2>
+                <p class="section-desc">
+                    For recruiters and tech enthusiasts: execute interactive shell commands to inspect profile details directly from the command line.
+                </p>
+
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="terminal-title">ayush@vashishth-shell: ~</span>
+                        <span>zsh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-output" id="terminal-output">
+                            <p class="term-cyan">Vashishth Interactive Shell v11.0</p>
+                            <p class="term-dim">Type <span class="term-highlight">'help'</span> to view available terminal commands.</p>
+                            <br>
+                        </div>
+                        <div class="terminal-input-row">
+                            <span class="term-prompt">ayush@vashishth:~$</span>
+                            <input type="text" id="terminal-input" class="terminal-input" placeholder="Type a command (e.g. help, skills, projects)..." autocomplete="off" spellcheck="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION WITH WEB3FORMS INTEGRATION -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-desc">
+                    Available for Security Engineering, DevSecOps, Web Development, and Full-Stack Opportunities. Reach out directly via email, phone, or send a message below.
+                </p>
+
+                <div class="contact-grid">
+                    <div>
+                        <div class="contact-card-link copyable-card" id="contact-card-email" data-copy="ayushvs1201@gmail.com" title="Click to copy Email">
+                            <div class="contact-icon-box">
+                                <svg class="svg-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <span class="section-tag" style="padding: 2px 8px; font-size: 0.7rem; margin-bottom: 2px;">EMAIL (CLICK TO COPY)</span>
+                                <div><strong>ayushvs1201@gmail.com</strong></div>
+                            </div>
+                        </div>
+
+                        <div class="contact-card-link copyable-card" id="contact-card-phone" data-copy="+919045495707" title="Click to copy Phone">
+                            <div class="contact-icon-box">
+                                <svg class="svg-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <span class="section-tag" style="padding: 2px 8px; font-size: 0.7rem; margin-bottom: 2px;">PHONE (CLICK TO COPY)</span>
+                                <div><strong>+91-9045495707</strong></div>
+                            </div>
+                        </div>
+
+                        <a href="https://linkedin.com/in/ayushvs1201" target="_blank" rel="noopener noreferrer" class="contact-card-link" id="contact-card-linkedin">
+                            <div class="contact-icon-box">
+                                <svg class="svg-icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            </div>
+                            <div>
+                                <span class="section-tag" style="padding: 2px 8px; font-size: 0.7rem; margin-bottom: 2px;">LINKEDIN</span>
+                                <div><strong>linkedin.com/in/ayushvs1201</strong></div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Ayush-Vashishth" target="_blank" rel="noopener noreferrer" class="contact-card-link" id="contact-card-github">
+                            <div class="contact-icon-box">
+                                <svg class="svg-icon" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                            </div>
+                            <div>
+                                <span class="section-tag" style="padding: 2px 8px; font-size: 0.7rem; margin-bottom: 2px;">GITHUB</span>
+                                <div><strong>github.com/Ayush-Vashishth</strong></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Web3Forms Powered Contact Form -->
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contact-form" onsubmit="handleContactSubmit(event)">
+                        <input type="hidden" name="access_key" value="36d2d4db-0377-420e-9152-baf59f1992e9">
+                        <input type="hidden" name="subject" value="New Portfolio Contact Message from ayush-vashishth.github.io">
+                        <input type="hidden" name="from_name" value="Ayush Portfolio Visitor">
+                        
+                        <h3 class="info-card-title mb-3">Send a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" name="name" class="form-input" required placeholder="Jane Doe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">Your Email</label>
+                            <input type="email" id="contact-email" name="email" class="form-input" required placeholder="jane@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-msg">Message</label>
+                            <textarea id="contact-msg" name="message" class="form-input" rows="4" required placeholder="Hi Ayush, I'd like to discuss..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" id="btn-submit-contact" style="width: 100%; justify-content: center;">
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <p>© 2026 Ayush Vashishth. Built with precision and modern web engineering.</p>
+            </div>
+        </footer>
+
+    </div> <!-- /main-content-wrapper -->
+
+    <!-- JS Engine -->
+    <script src="script.js"></script>
 </body>
-
 </html>
